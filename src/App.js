@@ -16,7 +16,8 @@ function App() {
 }
 
 function dateTimer() {
-    const element = (<div>{new Date().toLocaleDateString()}</div>);
+    let date = new Date();
+    const element = (<div>{date.toLocaleDateString()} {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}</div>);
     ReactDOM.render(
         element,
         document.getElementById('datetime')
@@ -24,7 +25,6 @@ function dateTimer() {
 }
 
 setInterval(dateTimer, 1000);
-
 
 
 export default App;
