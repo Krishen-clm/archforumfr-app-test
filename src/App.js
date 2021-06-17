@@ -15,7 +15,7 @@ function App() {
 }
 
 function dateTimer() {
-    const element = (<di>{new Date().toLocaleDateString()}</div>);
+    const element = (<div>{new Date().toLocaleDateString()}</div>);
     ReactDOM.render(
         element,
         document.getElementById('datetime')
